@@ -1,5 +1,5 @@
 var beacon  = require('bleacon');
-console.log('im up');
+console.log('hello there');
 var uuid = "d0d3fa86-ca76-45ec-9bd9-6af4be92c89e";
 beacon.startScanning(uuid);
 
