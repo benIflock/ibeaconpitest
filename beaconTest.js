@@ -1,8 +1,8 @@
 var beacon  = require('bleacon');
 
-var uuid = "";
+var uuid = "d0d3fa86-ca76-45ec-9bd9-6af4be92c89e";
 beacon.startScanning(uuid);
 
-becon.on('discover', function(bleacon){
+beacon.on('discover', function(bleacon){
 console.log(bleacon.uuid);
 });
