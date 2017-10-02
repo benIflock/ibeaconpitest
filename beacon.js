@@ -1,9 +1,6 @@
-var beacon  = require('bleacon');
-console.log('hello there');
-var uuid = "d0611e78bbb44591a5f8487910ae4366";
-beacon.startScanning(uuid, 0, 0);
-
-beacon.on('discover', function(bleacon){
-  console.log('got one');
-console.log(bleacon.uuid);
-});
+var Bleacon = require('bleacon');
+Bleacon.startScanning();
+Bleacon.on('discover', function (bleacon) {
+    console.log(Date(), bleacon.uuid, bleacon.major, bleacon.minor,
+        bleacon.measuredPower, bleacon.rssi, bleacon.proximity, bleacon.accuracy);
+})
