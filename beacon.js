@@ -1,5 +1,5 @@
 var Bleacon = require('bleacon');
-var socket = require('socket.io-client')('http://localhost/scanner');
+var socket = require('socket.io-client')('http://10.0.0.5:7000');
 
 Bleacon.startScanning();
 Bleacon.on('discover', function (bleacon) {
