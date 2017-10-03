@@ -1,5 +1,5 @@
 var Bleacon = require('bleacon');
-var socket = require('socket.io-client')('http://10.0.0.5:7000/socket');
+var socket = require('socket.io-client')('http://10.0.0.5:7000');
 socket.on('connect', function(){  
   console.log('connected to server');
 });
